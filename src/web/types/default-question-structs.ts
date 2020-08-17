@@ -78,7 +78,6 @@ export const DEFAULT_CONTRIBUTION_RESPONSE_DETAILS: () => FeedbackContributionRe
 export const DEFAULT_CONSTSUM_OPTIONS_QUESTION_DETAILS: () => FeedbackConstantSumQuestionDetails =
     (): FeedbackConstantSumQuestionDetails => {
       return {
-        numOfConstSumOptions: 2,
         constSumOptions: ['', ''],
         distributeToRecipients: false,
         pointsPerOption: false,
@@ -96,7 +95,6 @@ export const DEFAULT_CONSTSUM_OPTIONS_QUESTION_DETAILS: () => FeedbackConstantSu
 export const DEFAULT_CONSTSUM_RECIPIENTS_QUESTION_DETAILS: () => FeedbackConstantSumQuestionDetails =
     (): FeedbackConstantSumQuestionDetails => {
       return {
-        numOfConstSumOptions: 0,
         constSumOptions: [],
         distributeToRecipients: true,
         pointsPerOption: false,

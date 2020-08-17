@@ -10,7 +10,6 @@ import teammates.common.util.Const;
 import teammates.common.util.FieldValidator;
 
 public class FeedbackConstantSumQuestionDetails extends FeedbackQuestionDetails {
-    private int numOfConstSumOptions;
     private List<String> constSumOptions;
     private boolean distributeToRecipients;
     private boolean pointsPerOption;
@@ -21,7 +20,6 @@ public class FeedbackConstantSumQuestionDetails extends FeedbackQuestionDetails 
     public FeedbackConstantSumQuestionDetails() {
         super(FeedbackQuestionType.CONSTSUM);
 
-        this.numOfConstSumOptions = 0;
         this.constSumOptions = new ArrayList<>();
         this.distributeToRecipients = false;
         this.pointsPerOption = false;
@@ -201,14 +199,6 @@ public class FeedbackConstantSumQuestionDetails extends FeedbackQuestionDetails 
     @Override
     public String validateGiverRecipientVisibility(FeedbackQuestionAttributes feedbackQuestionAttributes) {
         return "";
-    }
-
-    public int getNumOfConstSumOptions() {
-        return numOfConstSumOptions;
-    }
-
-    public void setNumOfConstSumOptions(int numOfConstSumOptions) {
-        this.numOfConstSumOptions = numOfConstSumOptions;
     }
 
     public List<String> getConstSumOptions() {
